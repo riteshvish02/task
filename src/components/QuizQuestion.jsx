@@ -34,13 +34,7 @@ export default function QuizQuestion({ question, onAnswer, currentQuestion,setCu
           </button>
         ))}
       </div>
-      {showSolution && question.detailed_solution && (
-        <div className="mt-4 p-4 bg-gray-50 rounded-lg">
-          <h3 className="font-bold">Detailed Solution:</h3>
-          <p dangerouslySetInnerHTML={{ __html: question.detailed_solution }} />
-        </div>
-      )}
-     {showSolution && (
+      {showSolution && (
         <button
           onClick={()=>setCurrentQuestion(currentQuestion+1)}
           className="mt-4 cursor-pointer w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition-colors"
@@ -48,6 +42,13 @@ export default function QuizQuestion({ question, onAnswer, currentQuestion,setCu
           Next Question
         </button>
       )}
+      {showSolution && question.detailed_solution && (
+        <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+          <h3 className="font-bold">Detailed Solution:</h3>
+          <p dangerouslySetInnerHTML={{ __html: question.detailed_solution }} />
+        </div>
+      )}
+    
     </div>
   );
 }
