@@ -13,7 +13,7 @@ export default function Quiz() {
   const totalQuestions = quizData.length;
   const handleAnswer = (selectedOption) => {
     if (selectedOption === true) {
-      setScore(score + 1);
+      setScore(score + 4);
     }
     if(currentQuestion > 1 && currentQuestion+1 === totalQuestions) {
         setShowResult(true);
