@@ -1,8 +1,44 @@
-# React + Vite
+# MCQ Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Multiple Choice Questions (MCQ) quiz application built with Vite, React, and JavaScript. The quiz includes a scoring system to track correct answers.
 
-Currently, two official plugins are available:
+## Features
+- Multiple choice questions
+- Real-time score tracking
+- Simple and fast UI using Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/riteshvish02/task.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Build for Production
+To create a production-ready build:
+```bash
+npm run build
+```
+
+## Technologies Used
+- Vite
+- React
+- JavaScript (or TypeScript if applicable)
+- Tailwind CSS for styling
+
+## Usage
+1. Select an answer for each question.
+2. Your score updates in real-time.
+3. At the end, see your final score.
+
+
