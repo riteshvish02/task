@@ -4,7 +4,7 @@ export default function QuizResult({ score, totalQuestions, onRestart }) {
       <div className="bg-white p-6 rounded-lg shadow-md text-center">
         <h2 className="text-2xl font-bold mb-4">Quiz Completed!</h2>
         <p className="text-gray-600 mb-6">
-          You scored {score} out of {totalQuestions}.
+          You scored {score} out of {totalQuestions*4}.
         </p>
         <button
           onClick={onRestart}

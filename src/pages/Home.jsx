@@ -6,6 +6,8 @@ export default function Home() {
   const navigate = useNavigate();
   const [quizzes, setQuizzes] = React.useState([]);
   const [Quiz,setQuizData] = React.useState({});
+  console.log(Quiz);
+  
   useEffect(() => {
      const fetchQuizData = async () => {
          fetch("/api")

@@ -11,6 +11,8 @@ export default function Quiz() {
   const [showResult, setShowResult] = useState(false);
   const [quizData, setQuizData] = useState([]);
   const totalQuestions = quizData.length;
+  console.log(quizData);
+  
   const handleAnswer = (selectedOption) => {
     if (selectedOption === true) {
       setScore(score + 4);
@@ -45,6 +47,7 @@ export default function Quiz() {
   return (
     
     <div className="container mx-auto p-4">
+        
       {showResult ? (
         <QuizResult
           score={score}
